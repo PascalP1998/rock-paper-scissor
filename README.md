@@ -1,0 +1,1 @@
+Mein eigener Versuch einer klassischen Web-Applikation für Stein, Schere, Papier.

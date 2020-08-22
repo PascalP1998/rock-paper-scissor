@@ -1,0 +1,117 @@
+body {
+    font-family: 'Helvatica Neue', sans-serif;
+    background-color: #cec7b4;
+}
+
+.field {
+    background-color: #1e3d59;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 50px;
+    border: 10px solid;
+    border-color: #ff6e40;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    ;
+}
+
+.field h1 {
+    grid-area: header;
+}
+
+.field img {
+    width: 100px;
+}
+
+.tools {
+    grid-area: main;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+.scissor {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.scissor img:hover {
+    animation-name: spin;
+    animation-duration: 500ms;
+}
+
+.rock {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.rock img:hover {
+    animation-name: spin;
+    animation-duration: 500ms;
+}
+
+.paper {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.paper img:hover {
+    animation-name: spin;
+    animation-duration: 500ms;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #1e3d59;
+    color: white;
+    padding: 0.2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    margin-left: 0.5em;
+}
