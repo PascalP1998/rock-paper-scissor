@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "de-DE">
     <head>
-        <title>Stein, Schere, Papier</title>
+        <title>Schere, Stein, Papier!</title>
         <link href = "style.css" type = "text/css" rel = "stylesheet">
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
@@ -9,17 +9,33 @@
     <body>
         <script src = "script.js"></script>
         <div class = "field">
-            <h1>Lasst uns spielen!</h1>
+            <h1>Lass uns Schere, Stein, Papier spielen!</h1>
+            <div class = "yourchoice">
+                <h2>Deine Wahl</h2>
+                <div class = "choicebox">
+                    <p id = "yourchoice"></p>
+                </div>
+            </div>
+            <div class = "score">
+                <p id = "score"> </p>
+                <div id = "buttonAppear"></div>
+            </div>
+            <div class = "cpuchoice">
+                <h2>Computer Wahl</h2>
+                <div class = "choicebox">
+                    <p id = "cpuchoice"></p>
+                </div>
+            </div>
             <div class = "tools">
-                <div class = "scissor">
+                <button id = "scissor" onclick = "gameFunction('Schere')" class = "scissor">
                     <img src = "scissor.svg">
-                </div>
-                <div class = "rock">
+                </button>
+                <button id = "rock" onclick = "gameFunction('Stein')" class = "rock">
                     <img src = "rock.svg">
-                </div>
-                <div class = "paper">
+                </button>
+                <button id = "paper" onclick = "gameFunction('Papier')" class = "paper">
                     <img src = "paper.svg">
-                </div>
+                </button>
             </div>
         </div>
     </body>
