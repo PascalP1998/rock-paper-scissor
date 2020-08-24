@@ -15,8 +15,8 @@ body {
     margin: auto;
     margin-top: 70px;
     border-radius: 50px;
-    animation-name: fadeIn;
-    animation-duration: 2s;
+    /*animation-name: fadeIn;
+    animation-duration: 2s;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
